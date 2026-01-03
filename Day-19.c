@@ -63,10 +63,33 @@ else{
 }
 
 
- 
+
+
+ // armstrong number 
+int number,sum,temp,rem;
+printf("enter the number : ");
+scanf("%d",&number);
+temp =number;
+sum = 0;
+
+while(temp!=0){
+
+rem = temp%10;
+sum = sum + rem*rem*rem;
+temp = temp/10;
+
+}
+
+if(number==sum){
+    printf("Armstorng number");
+}
+else{
+    printf("Not armstorng");
+}
 
 
     return 0;
 
 }
+
 
