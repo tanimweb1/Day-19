@@ -88,8 +88,45 @@ else{
 }
 
 
+
+
+
+    // check Armstorng number from 2 give number
+
+    int i, initialNum, finalNum, sum, temp, rem;
+    printf("Enter the initial number :");
+    scanf("%d", &initialNum);
+    printf("Enter the Final number :");
+    scanf("%d", &finalNum);
+    sum = 0;
+
+    for (i = initialNum; i <= finalNum; i++)
+    {
+        temp = i;
+        while (temp != 0)
+        {
+            rem = temp % 10;
+            sum = sum + rem * rem * rem;
+            temp = temp / 10;
+        }
+
+        if (sum == i)
+        {
+            printf("%d\n", i);
+        }
+        sum = 0;
+    }
+ 
+
+
+
+
+
+
+ 
     return 0;
 
 }
+
 
 
