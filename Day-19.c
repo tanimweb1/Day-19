@@ -119,6 +119,34 @@ else{
  
 
 
+   // practice codes for loop
+
+ // find palindrome number from initial to final number 
+    int initialNum, finalNum, sum, rem, i, temp;
+    printf("Enter the initial Number : ");
+    scanf("%d", &initialNum);
+    printf("Enter the final Number : ");
+    scanf("%d", &finalNum);
+    sum = 0;
+
+    for (i = initialNum; i <= finalNum; i++)
+    {
+
+        temp = i;
+        while (temp != 0)
+        {
+
+            rem = temp % 10;
+            sum = sum * 10 + rem;
+            temp = temp / 10;
+        }
+
+        if (sum == i)
+        {
+            printf("%d\n", i);
+        }
+        sum = 0;
+    }
 
 
 
@@ -127,6 +155,7 @@ else{
     return 0;
 
 }
+
 
 
 
