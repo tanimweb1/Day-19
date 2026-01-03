@@ -151,10 +151,30 @@ else{
 
 
 
+
+    // count numbers in a an integar value given by user
+int num, count;
+printf("enter any integar the number : ");
+scanf("%d", &num);
+
+count = 0;
+
+while (num!=0)
+{
+    num = num/10;
+    ++count;
+}
+printf("%d\n", count);
+
+ 
+
+ 
+
  
     return 0;
 
 }
+
 
 
 
