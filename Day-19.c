@@ -21,5 +21,24 @@ printf("Sum is : %d", sum);
 
 
 
+
+ // Reverse number
+int number,sum,temp,rem;
+printf("enter the number : ");
+scanf("%d", &number);
+sum = 0;
+temp = number;
+
+while (temp!=0)
+{
+    rem=temp%10;
+    sum= sum*10+rem;
+    temp = temp/10;
+}
+printf("Reverse is %d",sum);   
+
+
+
     return 0;
+
 }
